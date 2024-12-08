@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.page {
+  background-color: #F8F8F8;
+}
+
+.chapter-card {
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 12px;
+}
+
+.meditation-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 12px;
+  elevation: 2;
+}
+
+.player-controls {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}

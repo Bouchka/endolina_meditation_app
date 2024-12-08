@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-white text-primary font-sans;
+}
+
+.font-serif {
+  font-family: 'CMU Serif', serif;
+}
+
+.font-sans {
+  font-family: 'Mulish', sans-serif;
+}
+
+/* Image optimization classes */
+.img-contain {
+  @apply w-full h-full object-contain;
+}
+
+.img-cover {
+  @apply w-full h-full object-cover;
+}
+
+/* Component-specific styles */
+.chapter-card {
+  @apply p-4 rounded-xl transition-all duration-200;
+}
+
+.meditation-card {
+  @apply p-4 rounded-xl bg-white shadow-sm transition-all duration-200;
+}
+
+.meditation-card.completed {
+  @apply opacity-50;
+}
+
+.meditation-title {
+  @apply text-4xl font-serif text-primary mb-8;
+}
+
+.mark-complete-button {
+  @apply mt-8 py-4 px-8 bg-primary text-white rounded-full 
+         text-center font-medium hover:bg-primary/90 transition-colors;
+}
+
+/* Progress tracker styles */
+.progress-bar {
+  @apply w-1 bg-[#E6F3F0] mx-auto transition-all duration-300;
+}
+
+.progress-bar-fill {
+  @apply w-full bg-primary rounded-full transition-all duration-300;
+}
