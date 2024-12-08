@@ -14,7 +14,7 @@ export function LoginForm() {
     e.preventDefault();
     const success = await signIn(email, password);
     if (success) {
-      const from = (location.state as any)?.from?.pathname || '/';
+      const from = (location.state as any)?.from?.pathname || '/meditations';
       navigate(from, { replace: true });
     }
   };
@@ -56,7 +56,7 @@ export function LoginForm() {
       <button
         type="submit"
         disabled={loading}
-        className="mt-6 w-full py-3 px-4 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors disabled:opacity-50"
+        className="w-full py-3 px-4 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors disabled:opacity-50"
       >
         {loading ? 'Signing in...' : 'Sign In'}
       </button>
