@@ -14,7 +14,7 @@ export const chapters: Chapter[] = [
         icon: '⬤',
         audioUrl: '/audio/warrior/ground-in-lightness.mp3',
         image: '/images/meditation-1.jpg',
-        description: 'Connect with your inner warrior through grounding practices.',
+        description: 'Connect with your inner warrior through grounding practices. Here is more text to test.',
         duration: '10:00'
       },
       {
