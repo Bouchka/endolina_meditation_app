@@ -1,6 +1,7 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider } from './components/auth/AuthProvider';
-import { AuthTabs } from './components/auth/AuthTabs';
+import { SignInPage } from './components/auth/SignInPage';
+import { SignUpPage } from './components/auth/SignUpPage';
 import { MeditationList } from './components/MeditationList';
 import { Player } from './components/Player';
 import { PrivateRoute } from './components/auth/PrivateRoute';
@@ -12,9 +13,11 @@ export function App() {
     <BrowserRouter>
       <AuthProvider>
         <Routes>
-          <Route path="/auth" element={<AuthTabs />} />
+          <Route path="/" element={<Navigate to="/sign-in" replace />} />
+          <Route path="/sign-in" element={<SignInPage />} />
+          <Route path="/create-your-account" element={<SignUpPage />} />
           <Route
-            path="/"
+            path="/meditations"
             element={
               <PrivateRoute>
                 <MeditationList />

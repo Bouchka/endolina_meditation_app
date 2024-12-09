@@ -1,10 +1,23 @@
 import { useState } from 'react';
 import { LoginForm } from './LoginForm';
 import { SignUpForm } from './SignUpForm';
+import { ForgotPasswordForm } from './ForgotPasswordForm';
 import { Logo } from '../ui/Logo';
 
 export function AuthTabs() {
   const [activeTab, setActiveTab] = useState<'login' | 'signup'>('login');
+  const [showForgotPassword, setShowForgotPassword] = useState(false);
+
+  if (showForgotPassword) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-gray-50">
+        <div className="max-w-md w-full space-y-8 p-8 bg-white rounded-xl shadow-lg">
+          <Logo />
+          <ForgotPasswordForm onBack={() => setShowForgotPassword(false)} />
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50">
@@ -35,7 +48,11 @@ export function AuthTabs() {
         </div>
 
         <div className="mt-8">
-          {activeTab === 'login' ? <LoginForm /> : <SignUpForm />}
+          {activeTab === 'login' ? (
+            <LoginForm onForgotPassword={() => setShowForgotPassword(true)} />
+          ) : (
+            <SignUpForm />
+          )}
         </div>
       </div>
     </div>

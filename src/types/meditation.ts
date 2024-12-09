@@ -1,3 +1,9 @@
+export type ContentBlock = {
+  type: 'text' | 'heading' | 'quote' | 'list';
+  content: string;
+  items?: string[];
+}
+
 export interface Meditation {
   id: string;
   title: string;
@@ -5,7 +11,7 @@ export interface Meditation {
   icon: string;
   audioUrl: string;
   image: string;
-  description: string;
+  content: ContentBlock[];
   duration: string;
 }
 

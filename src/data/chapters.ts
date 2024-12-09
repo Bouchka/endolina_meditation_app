@@ -14,7 +14,16 @@ export const chapters: Chapter[] = [
         icon: '⬤',
         audioUrl: '/audio/warrior/ground-in-lightness.mp3',
         image: '/images/meditation-1.jpg',
-        description: 'Connect with your inner warrior through grounding practices. Here is more text to test. And another test',
+        content: [
+          {
+            type: 'text',
+            content: 'Begin your journey by connecting with your inner warrior through grounding practices that bring lightness to your being.'
+          },
+          {
+            type: 'quote',
+            content: 'A warrior\'s strength comes not from chaos, but from finding peace within.'
+          }
+        ],
         duration: '10:00'
       },
       {
@@ -24,7 +33,12 @@ export const chapters: Chapter[] = [
         icon: '◉',
         audioUrl: '/audio/warrior/state-of-flow.mp3',
         image: '/images/meditation-2.jpg',
-        description: 'Enter a state of flow and embrace your warrior spirit.',
+        content: [
+          {
+            type: 'text',
+            content: 'Enter a state of flow and embrace your warrior spirit. Learn to move with grace and purpose through life\'s challenges.'
+          }
+        ],
         duration: '15:00'
       },
       {
@@ -34,7 +48,12 @@ export const chapters: Chapter[] = [
         icon: '◈',
         audioUrl: '/audio/warrior/stay-proud.mp3',
         image: '/images/meditation-3.jpg',
-        description: 'Embrace your achievements and stand tall in your power.',
+        content: [
+          {
+            type: 'text',
+            content: 'Embrace your achievements and stand tall in your power. This meditation helps you recognize and celebrate your inner strength.'
+          }
+        ],
         duration: '12:00'
       },
       {
@@ -44,7 +63,12 @@ export const chapters: Chapter[] = [
         icon: '✦',
         audioUrl: '/audio/warrior/grateful-abundance.mp3',
         image: '/images/meditation-4.jpg',
-        description: 'Practice gratitude and attract abundance.',
+        content: [
+          {
+            type: 'text',
+            content: 'Practice gratitude and attract abundance into your life through the warrior\'s mindset of appreciation and manifestation.'
+          }
+        ],
         duration: '10:00'
       },
       {
@@ -54,7 +78,12 @@ export const chapters: Chapter[] = [
         icon: '◎',
         audioUrl: '/audio/warrior/manifest-ambition.mp3',
         image: '/images/meditation-5.jpg',
-        description: 'Channel your ambition into manifestation.',
+        content: [
+          {
+            type: 'text',
+            content: 'Channel your ambition into manifestation. Learn to direct your warrior energy toward achieving your goals.'
+          }
+        ],
         duration: '15:00'
       },
       {
@@ -64,7 +93,12 @@ export const chapters: Chapter[] = [
         icon: '◇',
         audioUrl: '/audio/warrior/inner-self.mp3',
         image: '/images/meditation-6.jpg',
-        description: 'Connect with your inner self.',
+        content: [
+          {
+            type: 'text',
+            content: 'Connect with your inner self and discover the true source of your warrior strength.'
+          }
+        ],
         duration: '12:00'
       },
       {
@@ -74,7 +108,12 @@ export const chapters: Chapter[] = [
         icon: '○',
         audioUrl: '/audio/warrior/timeless-authenticity.mp3',
         image: '/images/meditation-7.jpg',
-        description: 'Embrace your authentic self.',
+        content: [
+          {
+            type: 'text',
+            content: 'Embrace your authentic self and let your warrior spirit shine through in everything you do.'
+          }
+        ],
         duration: '10:00'
       }
     ]
@@ -92,7 +131,12 @@ export const chapters: Chapter[] = [
         icon: '❤',
         audioUrl: '/audio/mother/nurturing-presence.mp3',
         image: '/images/meditation-8.jpg',
-        description: 'Embrace your nurturing energy.',
+        content: [
+          {
+            type: 'text',
+            content: 'Embrace your nurturing energy and learn to care for yourself as deeply as you care for others.'
+          }
+        ],
         duration: '12:00'
       },
       {
@@ -102,7 +146,12 @@ export const chapters: Chapter[] = [
         icon: '♡',
         audioUrl: '/audio/mother/sacred-feminine.mp3',
         image: '/images/meditation-9.jpg',
-        description: 'Connect with your sacred feminine energy.',
+        content: [
+          {
+            type: 'text',
+            content: 'Connect with your sacred feminine energy and tap into the ancient wisdom that resides within.'
+          }
+        ],
         duration: '15:00'
       },
       {
@@ -112,7 +161,12 @@ export const chapters: Chapter[] = [
         icon: '♥',
         audioUrl: '/audio/mother/emotional-wisdom.mp3',
         image: '/images/meditation-10.jpg',
-        description: 'Tap into your emotional wisdom.',
+        content: [
+          {
+            type: 'text',
+            content: 'Tap into your emotional wisdom and learn to trust the guidance of your heart.'
+          }
+        ],
         duration: '10:00'
       },
       {
@@ -122,7 +176,12 @@ export const chapters: Chapter[] = [
         icon: '❥',
         audioUrl: '/audio/mother/compassionate-heart.mp3',
         image: '/images/meditation-11.jpg',
-        description: 'Open your heart to compassion.',
+        content: [
+          {
+            type: 'text',
+            content: 'Open your heart to compassion and let love guide your actions.'
+          }
+        ],
         duration: '12:00'
       },
       {
@@ -132,7 +191,12 @@ export const chapters: Chapter[] = [
         icon: '♡',
         audioUrl: '/audio/mother/intuitive-guidance.mp3',
         image: '/images/meditation-12.jpg',
-        description: 'Follow your intuitive guidance.',
+        content: [
+          {
+            type: 'text',
+            content: 'Follow your intuitive guidance and trust in the wisdom of your inner mother.'
+          }
+        ],
         duration: '15:00'
       },
       {
@@ -142,7 +206,12 @@ export const chapters: Chapter[] = [
         icon: '❤',
         audioUrl: '/audio/mother/healing-touch.mp3',
         image: '/images/meditation-13.jpg',
-        description: 'Experience the power of healing touch.',
+        content: [
+          {
+            type: 'text',
+            content: 'Experience the power of healing touch and learn to channel nurturing energy.'
+          }
+        ],
         duration: '10:00'
       },
       {
@@ -152,7 +221,12 @@ export const chapters: Chapter[] = [
         icon: '♥',
         audioUrl: '/audio/mother/divine-mother.mp3',
         image: '/images/meditation-14.jpg',
-        description: 'Connect with the divine mother energy.',
+        content: [
+          {
+            type: 'text',
+            content: 'Connect with the divine mother energy and embrace your role as a nurturer.'
+          }
+        ],
         duration: '12:00'
       }
     ]
@@ -170,7 +244,12 @@ export const chapters: Chapter[] = [
         icon: '⚝',
         audioUrl: '/audio/magician/creative-flow.mp3',
         image: '/images/meditation-15.jpg',
-        description: 'Enter the creative flow state.',
+        content: [
+          {
+            type: 'text',
+            content: 'Enter the creative flow state and tap into your magical potential.'
+          }
+        ],
         duration: '15:00'
       },
       {
@@ -180,7 +259,12 @@ export const chapters: Chapter[] = [
         icon: '✧',
         audioUrl: '/audio/magician/magical-manifestation.mp3',
         image: '/images/meditation-16.jpg',
-        description: 'Manifest your desires through magic.',
+        content: [
+          {
+            type: 'text',
+            content: 'Manifest your desires through magic and intention setting.'
+          }
+        ],
         duration: '12:00'
       },
       {
@@ -190,7 +274,12 @@ export const chapters: Chapter[] = [
         icon: '✦',
         audioUrl: '/audio/magician/alchemical-transformation.mp3',
         image: '/images/meditation-17.jpg',
-        description: 'Transform through inner alchemy.',
+        content: [
+          {
+            type: 'text',
+            content: 'Transform through inner alchemy and embrace your power to change.'
+          }
+        ],
         duration: '15:00'
       },
       {
@@ -200,7 +289,12 @@ export const chapters: Chapter[] = [
         icon: '⚝',
         audioUrl: '/audio/magician/sacred-rituals.mp3',
         image: '/images/meditation-18.jpg',
-        description: 'Create your sacred rituals.',
+        content: [
+          {
+            type: 'text',
+            content: 'Create your sacred rituals and establish a magical practice.'
+          }
+        ],
         duration: '10:00'
       },
       {
@@ -210,7 +304,12 @@ export const chapters: Chapter[] = [
         icon: '✧',
         audioUrl: '/audio/magician/mystical-wisdom.mp3',
         image: '/images/meditation-19.jpg',
-        description: 'Access your mystical wisdom.',
+        content: [
+          {
+            type: 'text',
+            content: 'Access your mystical wisdom and connect with ancient knowledge.'
+          }
+        ],
         duration: '12:00'
       },
       {
@@ -220,7 +319,12 @@ export const chapters: Chapter[] = [
         icon: '✦',
         audioUrl: '/audio/magician/energy-mastery.mp3',
         image: '/images/meditation-20.jpg',
-        description: 'Master your energy.',
+        content: [
+          {
+            type: 'text',
+            content: 'Master your energy and learn to direct it with intention.'
+          }
+        ],
         duration: '15:00'
       },
       {
@@ -230,7 +334,12 @@ export const chapters: Chapter[] = [
         icon: '⚝',
         audioUrl: '/audio/magician/magical-presence.mp3',
         image: '/images/meditation-21.jpg',
-        description: 'Embody your magical presence.',
+        content: [
+          {
+            type: 'text',
+            content: 'Embody your magical presence and radiate transformative energy.'
+          }
+        ],
         duration: '10:00'
       }
     ]
@@ -248,7 +357,12 @@ export const chapters: Chapter[] = [
         icon: '◎',
         audioUrl: '/audio/oracle/inner-wisdom.mp3',
         image: '/images/meditation-22.jpg',
-        description: 'Access your inner wisdom.',
+        content: [
+          {
+            type: 'text',
+            content: 'Access your inner wisdom and trust your intuitive guidance.'
+          }
+        ],
         duration: '18:00'
       },
       {
@@ -258,7 +372,12 @@ export const chapters: Chapter[] = [
         icon: '◉',
         audioUrl: '/audio/oracle/divine-guidance.mp3',
         image: '/images/meditation-23.jpg',
-        description: 'Receive divine guidance.',
+        content: [
+          {
+            type: 'text',
+            content: 'Receive divine guidance and open yourself to higher wisdom.'
+          }
+        ],
         duration: '15:00'
       },
       {
@@ -268,7 +387,12 @@ export const chapters: Chapter[] = [
         icon: '◎',
         audioUrl: '/audio/oracle/prophetic-dreams.mp3',
         image: '/images/meditation-24.jpg',
-        description: 'Connect with your prophetic dreams.',
+        content: [
+          {
+            type: 'text',
+            content: 'Connect with your prophetic dreams and understand their messages.'
+          }
+        ],
         duration: '12:00'
       },
       {
@@ -278,7 +402,12 @@ export const chapters: Chapter[] = [
         icon: '◉',
         audioUrl: '/audio/oracle/ancestral-wisdom.mp3',
         image: '/images/meditation-25.jpg',
-        description: 'Access ancestral wisdom.',
+        content: [
+          {
+            type: 'text',
+            content: 'Access ancestral wisdom and connect with your lineage.'
+          }
+        ],
         duration: '15:00'
       },
       {
@@ -288,7 +417,12 @@ export const chapters: Chapter[] = [
         icon: '◎',
         audioUrl: '/audio/oracle/cosmic-connection.mp3',
         image: '/images/meditation-26.jpg',
-        description: 'Connect with cosmic energies.',
+        content: [
+          {
+            type: 'text',
+            content: 'Connect with cosmic energies and expand your consciousness.'
+          }
+        ],
         duration: '10:00'
       },
       {
@@ -298,7 +432,12 @@ export const chapters: Chapter[] = [
         icon: '◉',
         audioUrl: '/audio/oracle/oracle-vision.mp3',
         image: '/images/meditation-27.jpg',
-        description: 'Develop your oracle vision.',
+        content: [
+          {
+            type: 'text',
+            content: 'Develop your oracle vision and see beyond the veil.'
+          }
+        ],
         duration: '12:00'
       },
       {
@@ -308,7 +447,12 @@ export const chapters: Chapter[] = [
         icon: '◎',
         audioUrl: '/audio/oracle/timeless-wisdom.mp3',
         image: '/images/meditation-28.jpg',
-        description: 'Access timeless wisdom.',
+        content: [
+          {
+            type: 'text',
+            content: 'Access timeless wisdom and connect with eternal truths.'
+          }
+        ],
         duration: '15:00'
       }
     ]

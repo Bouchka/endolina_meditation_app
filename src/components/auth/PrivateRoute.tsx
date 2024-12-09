@@ -6,7 +6,7 @@ export function PrivateRoute({ children }: { children: React.ReactNode }) {
   const location = useLocation();
   
   if (!user) {
-    return <Navigate to="/auth" state={{ from: location }} replace />;
+    return <Navigate to="/sign-in" state={{ from: location }} replace />;
   }
   
   return <>{children}</>;

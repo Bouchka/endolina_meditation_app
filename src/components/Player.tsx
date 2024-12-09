@@ -7,6 +7,9 @@ import { AudioControls } from './audio/AudioControls';
 import { getMediaUrl } from '../utils/cloudinary';
 import { useAudioNavigation } from '../hooks/useAudioNavigation';
 import { AuthHeader } from './auth/AuthHeader';
+import { BackButton } from './ui/BackButton';
+import { MeditationDescription } from './meditation/MeditationDescription';
+import { CompleteButton } from './meditation/CompleteButton';
 
 export function Player() {
   const { id } = useParams();
@@ -48,20 +51,15 @@ export function Player() {
 
   const handleComplete = () => {
     markMeditationComplete(meditation.id);
-    navigate('/');
+    navigate('/meditations');
   };
 
   return (
     <div className="min-h-screen bg-white flex flex-col">
       <AuthHeader />
       
-      <div className="p-4">
-        <button 
-          onClick={() => navigate('/')}
-          className="text-primary hover:opacity-80"
-        >
-          ← Back
-        </button>
+      <div className="p-6">
+        <BackButton />
       </div>
 
       <img
@@ -74,11 +72,11 @@ export function Player() {
         }}
       />
       
-      <div className="flex-1 p-6 max-w-2xl mx-auto w-full">
+      <div className="flex-1 flex flex-col max-w-2xl mx-auto w-full px-6 py-8">
         <h1 className="text-4xl font-serif text-primary mb-8">
           {meditation.title}
         </h1>
-        
+
         <AudioControls
           isPlaying={isPlaying}
           currentTime={currentTime}
@@ -92,18 +90,9 @@ export function Player() {
         
         <AudioPlayer audioUrl={audioUrl} />
         
-        <div className="space-y-4 text-gray-600 mt-8">
-          {meditation.description.split('\n').map((paragraph, i) => (
-            <p key={i}>{paragraph}</p>
-          ))}
-        </div>
+        <MeditationDescription content={meditation.content} />
         
-        <button
-          onClick={handleComplete}
-          className="mark-complete-button w-full"
-        >
-          MARK AS COMPLETE
-        </button>
+        <CompleteButton onComplete={handleComplete} />
       </div>
     </div>
   );
